@@ -128,6 +128,7 @@ fun MainScreen(viewModel: CellViewModel = viewModel(factory = CellViewModel.fact
                     countCell--
                     checkLive = 0
                     checkDie = 0
+                    checkTrue = 0
                 }
 
 
