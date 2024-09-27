@@ -78,12 +78,12 @@ fun CellScreen(
             Spacer(modifier = Modifier.size((width * 0.05).dp))
 
             Column {
-                Text(text = if(cell.live == 0) "Мертвая" else "Живая",
+                Text(text = if(cell.live == 2) "Жизнь"  else if(cell.live == 0) "Мертвая" else "Живая",
                     color = Color.Black,
                     fontWeight = FontWeight.Bold,
                     fontSize = 20.sp
                     )
-                Text(text = if(cell.live == 0) "или прикидывается" else "и шевелится!",
+                Text(text = if (cell.live == 2) "ку-ку!" else if(cell.live == 0) "или прикидывается" else "и шевелится!",
                     color = Color.Black,
                     fontSize = 16.sp
                     )
